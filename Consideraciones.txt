@@ -1,0 +1,10 @@
+
+Tablas en ingles
+Estandar del banco para nombres de campos
+Campos pueden ser en español e ingles
+
+
+Consultas 
+Se requiere historico de asignacion de team members
+El chapter se asocia al team member?
+La aplicacion se asocia al Squad?
