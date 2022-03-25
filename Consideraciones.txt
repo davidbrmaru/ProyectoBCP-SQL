@@ -3,8 +3,16 @@ Tablas en ingles
 Estandar del banco para nombres de campos
 Campos pueden ser en español e ingles
 
+Considerar tener un historico del reporte activos por cierre. (Puede ser periodo mensual) Debe ser por cierre Chapter Leader, por evaluar.
 
 Consultas 
-Se requiere historico de asignacion de team members
-El chapter se asocia al team member?
-La aplicacion se asocia al Squad?
+Se requiere historico de asignacion de team members? NO 
+El chapter se asocia al team member? Si
+La aplicacion se asocia al Squad? Si
+
+bb ==> es binding block, toda aplicacion lo tiene mapeado en el clear quest
+
+
+
+
+
