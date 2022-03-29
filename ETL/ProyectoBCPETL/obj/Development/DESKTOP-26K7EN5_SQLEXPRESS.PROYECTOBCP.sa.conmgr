@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="DESKTOP-26K7EN5_SQLEXPRESS.PROYECTOBCP.sa"
+  DTS:DTSID="{1FB754C9-8801-4A63-9C74-65DE01A34B0E}"
+  DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=DESKTOP-26K7EN5\SQLEXPRESS;User ID=sa;Initial Catalog=PROYECTOBCP;Persist Security Info=True;Application Name=SSIS-ProyectoBCPETL-{1FB754C9-8801-4A63-9C74-65DE01A34B0E}DESKTOP-26K7EN5\SQLEXPRESS.PROYECTOBCP.sa;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAFI74fGMgZEK+lG4+vTwdNQAAAAACAAAAAAAQZgAAAAEAACAAAAAm6Foy3Up7R/FZoFHux1B00BOGBIJFuETOs3z/+cMkNgAAAAAOgAAAAAIAACAAAAAfmvQ+ZhP413PWw5KuzNSJHQ0sVCkRbJI8y9x74di7WIAAAAD+wXPXk0b/kxOl6YKZ9gs1wG70cB6MPG+gvP7aV0L3rPXWxCG7gaqlW+dIyCKS7kuRoYlr/u1c/mSZ4FG3Pvrf4L9AnRxzFb81ioWIerT0NMsGKs6T5/v6ftCjEyvl8rIarWBmvIDcfLj5fD2dCniObxdvQPgif1EZsVeMhx8fCUAAAABfW3Or2ioC43jmS8YNT15Pca7iPH99O1obplCZ6SQ8hALnpzAoUI8+S0bQeqbff8z/SFCjWBLSObS5qnG55Cta</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
