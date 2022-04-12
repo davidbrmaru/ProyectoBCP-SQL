@@ -9,14 +9,33 @@
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.2000.180"
   DTS:LocaleID="3082"
+  DTS:MaxErrorCount="10000"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="4"
-  DTS:VersionGUID="{C849F2E5-1816-4BB5-8717-DA488A723333}">
+  DTS:VersionBuild="18"
+  DTS:VersionGUID="{2804A0E9-3BCD-4AC3-98AC-A641BF15E77A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
   <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Carga a Tablas Principales"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{C7A43F91-4D59-4FC0-BEA6-0B1C43DC8B72}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Carga a Tablas Principales"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{1FB754C9-8801-4A63-9C74-65DE01A34B0E}"
+          SQLTask:BypassPrepare="False"
+          SQLTask:SqlStatementSource="EXEC SP_CARGA_INICIAL;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\Carga a Temporales BD"
       DTS:CreationName="Microsoft.Pipeline"
@@ -76,7 +95,7 @@
               <inputs>
                 <input
                   refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET]"
-                  errorRowDisposition="FailComponent"
+                  errorRowDisposition="IgnoreFailure"
                   hasSideEffects="true"
                   name="Entrada de destino de ADO NET">
                   <inputColumns>
@@ -124,7 +143,7 @@
                       refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].Columns[BB]"
                       cachedCodepage="65001"
                       cachedDataType="str"
-                      cachedLength="50"
+                      cachedLength="100"
                       cachedName="BB"
                       externalMetadataColumnId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[BB]"
                       lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[BB]" />
@@ -140,7 +159,7 @@
                       refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].Columns[COMENTARIOS]"
                       cachedCodepage="65001"
                       cachedDataType="str"
-                      cachedLength="50"
+                      cachedLength="200"
                       cachedName="COMENTARIOS"
                       externalMetadataColumnId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[COMENTARIOS]"
                       lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[COMENTARIOS]" />
@@ -212,7 +231,7 @@
                       refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].Columns[TRIBU   COE]"
                       cachedCodepage="65001"
                       cachedDataType="str"
-                      cachedLength="50"
+                      cachedLength="100"
                       cachedName="TRIBU   COE"
                       externalMetadataColumnId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[TRIBU_COE]"
                       lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[TRIBU   COE]" />
@@ -243,7 +262,7 @@
                     <externalMetadataColumn
                       refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Mat_Chapter]"
                       dataType="wstr"
-                      length="10"
+                      length="50"
                       name="Mat_Chapter" />
                     <externalMetadataColumn
                       refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Chapter_Leader]"
@@ -253,17 +272,17 @@
                     <externalMetadataColumn
                       refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Tipo_Preper]"
                       dataType="wstr"
-                      length="10"
+                      length="50"
                       name="Tipo_Preper" />
                     <externalMetadataColumn
                       refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Empresa]"
                       dataType="wstr"
-                      length="20"
+                      length="50"
                       name="Empresa" />
                     <externalMetadataColumn
                       refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Matricula]"
                       dataType="wstr"
-                      length="10"
+                      length="50"
                       name="Matricula" />
                     <externalMetadataColumn
                       refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Apellido_Paterno]"
@@ -283,17 +302,17 @@
                     <externalMetadataColumn
                       refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[SQ_ROL]"
                       dataType="wstr"
-                      length="40"
+                      length="50"
                       name="SQ_ROL" />
                     <externalMetadataColumn
                       refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[ROL_INSOURCING]"
                       dataType="wstr"
-                      length="10"
+                      length="50"
                       name="ROL_INSOURCING" />
                     <externalMetadataColumn
                       refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Especialidad]"
                       dataType="wstr"
-                      length="20"
+                      length="50"
                       name="Especialidad" />
                     <externalMetadataColumn
                       refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[TRIBU_COE]"
@@ -308,12 +327,12 @@
                     <externalMetadataColumn
                       refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Codigo_APP]"
                       dataType="wstr"
-                      length="6"
+                      length="50"
                       name="Codigo_APP" />
                     <externalMetadataColumn
                       refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Por_Asignacion]"
                       dataType="wstr"
-                      length="6"
+                      length="50"
                       name="Por_Asignacion" />
                     <externalMetadataColumn
                       refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[BB]"
@@ -363,7 +382,7 @@
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Origen de archivo plano;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
               description="Origen de archivo plano"
-              localeId="3082"
+              localeId="10250"
               name="Leer Base de Activos"
               usesDispositions="true"
               version="1">
@@ -660,7 +679,7 @@
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[TRIBU   COE]"
-                      length="50"
+                      length="100"
                       lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[TRIBU   COE]"
                       name="TRIBU   COE"
                       truncationRowDisposition="FailComponent">
@@ -748,7 +767,7 @@
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[BB]"
-                      length="50"
+                      length="100"
                       lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[BB]"
                       name="BB"
                       truncationRowDisposition="FailComponent">
@@ -792,7 +811,7 @@
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
                       externalMetadataColumnId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[COMENTARIOS]"
-                      length="50"
+                      length="200"
                       lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[COMENTARIOS]"
                       name="COMENTARIOS"
                       truncationRowDisposition="FailComponent">
@@ -908,7 +927,7 @@
                       refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[TRIBU   COE]"
                       codePage="65001"
                       dataType="str"
-                      length="50"
+                      length="100"
                       name="TRIBU   COE" />
                     <externalMetadataColumn
                       refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[SQUAD]"
@@ -932,7 +951,7 @@
                       refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[BB]"
                       codePage="65001"
                       dataType="str"
-                      length="50"
+                      length="100"
                       name="BB" />
                     <externalMetadataColumn
                       refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[CHAPTER]"
@@ -944,7 +963,7 @@
                       refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[COMENTARIOS]"
                       codePage="65001"
                       dataType="str"
-                      length="50"
+                      length="200"
                       name="COMENTARIOS" />
                     <externalMetadataColumn
                       refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Columna 19]"
@@ -1012,24 +1031,6 @@
           SQLTask:SqlStatementSource="Truncate table [dbo].[TP_INICIAL_BASE_ACTIVOS];" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
-    <DTS:Executable
-      DTS:refId="Package\Tarea Ejecutar SQL"
-      DTS:CreationName="Microsoft.ExecuteSQLTask"
-      DTS:Description="Tarea Ejecutar SQL"
-      DTS:DTSID="{C7A43F91-4D59-4FC0-BEA6-0B1C43DC8B72}"
-      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Tarea Ejecutar SQL"
-      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <SQLTask:SqlTaskData
-          SQLTask:Connection="{1FB754C9-8801-4A63-9C74-65DE01A34B0E}"
-          SQLTask:BypassPrepare="False"
-          SQLTask:SqlStatementSource="EXEC SP_CARGA_INICIAL;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
-      </DTS:ObjectData>
-    </DTS:Executable>
   </DTS:Executables>
   <DTS:PrecedenceConstraints>
     <DTS:PrecedenceConstraint
@@ -1047,7 +1048,7 @@
       DTS:From="Package\Carga a Temporales BD"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción 1"
-      DTS:To="Package\Tarea Ejecutar SQL" />
+      DTS:To="Package\Carga a Tablas Principales" />
   </DTS:PrecedenceConstraints>
   <DTS:EventHandlers>
     <DTS:EventHandler
@@ -1085,6 +1086,10 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="202,42"
+          Id="Package\Carga a Tablas Principales"
+          TopLeft="709,120" />
+        <NodeLayout
           Size="190,42"
           Id="Package\Carga a Temporales BD"
           TopLeft="419,120" />
@@ -1092,10 +1097,6 @@
           Size="172,42"
           Id="Package\Limpiar Temporales"
           TopLeft="152,119" />
-        <NodeLayout
-          Size="170,42"
-          Id="Package\Tarea Ejecutar SQL"
-          TopLeft="709,120" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción]"
           TopLeft="324,140.5">
@@ -1155,21 +1156,21 @@
         <NodeLayout
           Size="200,42"
           Id="Package\Carga a Temporales BD\Carga Base de Activos BD"
-          TopLeft="330,244" />
+          TopLeft="334,324" />
         <EdgeLayout
           Id="Package\Carga a Temporales BD.Paths[Salida de origen de archivo plano]"
-          TopLeft="431.5,117">
+          TopLeft="433.5,117">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,127"
+              EndConnector="0,207"
               Start="0,0"
-              End="0,119.5">
+              End="0,199.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,119.5" />
+                    End="0,199.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

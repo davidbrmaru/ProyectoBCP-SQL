@@ -2,13 +2,13 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>ProyectoBCPETL</Name>
-    <LastWriteTime>2022-03-29T05:09:41.6397437Z</LastWriteTime>
+    <LastWriteTime>2022-04-12T04:48:00.8946633Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>CargaInicial.dtsx</Name>
-      <LastWriteTime>2022-04-01T02:23:59.0989272Z</LastWriteTime>
+      <LastWriteTime>2022-04-12T05:00:53.211176Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
