@@ -12,8 +12,8 @@
   DTS:MaxErrorCount="10000"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="18"
-  DTS:VersionGUID="{2804A0E9-3BCD-4AC3-98AC-A641BF15E77A}">
+  DTS:VersionBuild="19"
+  DTS:VersionGUID="{7AE80859-6A4D-4D2C-A78B-432CB0E85BFE}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -37,13 +37,13 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\Carga a Temporales BD"
+      DTS:refId="Package\Carga de Archivo a Temporales BD"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Tarea Flujo de datos"
       DTS:DTSID="{DEE75DE9-A534-44B0-B5A8-5B3E3E46A3B1}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Carga a Temporales BD"
+      DTS:ObjectName="Carga de Archivo a Temporales BD"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -51,7 +51,7 @@
           version="1">
           <components>
             <component
-              refId="Package\Carga a Temporales BD\Carga Base de Activos BD"
+              refId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD"
               componentClassID="Microsoft.ManagedComponentHost"
               contactInfo="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;2"
               description="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC."
@@ -86,7 +86,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Connections[IDbConnection]"
+                  refId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Connections[IDbConnection]"
                   connectionManagerID="{1FB754C9-8801-4A63-9C74-65DE01A34B0E}:external"
                   connectionManagerRefId="Project.ConnectionManagers[DESKTOP-26K7EN5_SQLEXPRESS.PROYECTOBCP.sa]"
                   description="Administrador de conexiones administrado"
@@ -94,258 +94,258 @@
               </connections>
               <inputs>
                 <input
-                  refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET]"
+                  refId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET]"
                   errorRowDisposition="IgnoreFailure"
                   hasSideEffects="true"
                   name="Entrada de destino de ADO NET">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].Columns[Tipo_Preper]"
+                      refId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].Columns[Tipo_Preper]"
                       cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Tipo_Preper"
-                      externalMetadataColumnId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Tipo_Preper]"
-                      lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Tipo_Preper]" />
+                      externalMetadataColumnId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Tipo_Preper]"
+                      lineageId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Tipo_Preper]" />
                     <inputColumn
-                      refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].Columns[Empresa]"
+                      refId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].Columns[Empresa]"
                       cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Empresa"
-                      externalMetadataColumnId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Empresa]"
-                      lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Empresa]" />
+                      externalMetadataColumnId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Empresa]"
+                      lineageId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Empresa]" />
                     <inputColumn
-                      refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].Columns[Nombres]"
+                      refId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].Columns[Nombres]"
                       cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Nombres"
-                      externalMetadataColumnId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Nombres]"
-                      lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Nombres]" />
+                      externalMetadataColumnId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Nombres]"
+                      lineageId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Nombres]" />
                     <inputColumn
-                      refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].Columns[Especialidad]"
+                      refId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].Columns[Especialidad]"
                       cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Especialidad"
-                      externalMetadataColumnId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Especialidad]"
-                      lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Especialidad]" />
+                      externalMetadataColumnId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Especialidad]"
+                      lineageId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Especialidad]" />
                     <inputColumn
-                      refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].Columns[SQUAD]"
+                      refId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].Columns[SQUAD]"
                       cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="SQUAD"
-                      externalMetadataColumnId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[SQUAD]"
-                      lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[SQUAD]" />
+                      externalMetadataColumnId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[SQUAD]"
+                      lineageId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[SQUAD]" />
                     <inputColumn
-                      refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].Columns[BB]"
+                      refId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].Columns[BB]"
                       cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="100"
                       cachedName="BB"
-                      externalMetadataColumnId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[BB]"
-                      lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[BB]" />
+                      externalMetadataColumnId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[BB]"
+                      lineageId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[BB]" />
                     <inputColumn
-                      refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].Columns[CHAPTER]"
+                      refId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].Columns[CHAPTER]"
                       cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="CHAPTER"
-                      externalMetadataColumnId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[CHAPTER]"
-                      lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[CHAPTER]" />
+                      externalMetadataColumnId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[CHAPTER]"
+                      lineageId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[CHAPTER]" />
                     <inputColumn
-                      refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].Columns[COMENTARIOS]"
+                      refId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].Columns[COMENTARIOS]"
                       cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="200"
                       cachedName="COMENTARIOS"
-                      externalMetadataColumnId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[COMENTARIOS]"
-                      lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[COMENTARIOS]" />
+                      externalMetadataColumnId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[COMENTARIOS]"
+                      lineageId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[COMENTARIOS]" />
                     <inputColumn
-                      refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].Columns[Nombre Cals]"
+                      refId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].Columns[Nombre Cals]"
                       cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Nombre Cals"
-                      externalMetadataColumnId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Nombre_Cals]"
-                      lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Nombre Cals]" />
+                      externalMetadataColumnId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Nombre_Cals]"
+                      lineageId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Nombre Cals]" />
                     <inputColumn
-                      refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].Columns[Mat Chapter]"
+                      refId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].Columns[Mat Chapter]"
                       cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Mat Chapter"
-                      externalMetadataColumnId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Mat_Chapter]"
-                      lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Mat Chapter]" />
+                      externalMetadataColumnId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Mat_Chapter]"
+                      lineageId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Mat Chapter]" />
                     <inputColumn
-                      refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].Columns[Chapter Leader]"
+                      refId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].Columns[Chapter Leader]"
                       cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Chapter Leader"
-                      externalMetadataColumnId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Chapter_Leader]"
-                      lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Chapter Leader]" />
+                      externalMetadataColumnId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Chapter_Leader]"
+                      lineageId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Chapter Leader]" />
                     <inputColumn
-                      refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].Columns[Matrícula]"
+                      refId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].Columns[Matrícula]"
                       cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Matrícula"
-                      externalMetadataColumnId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Matricula]"
-                      lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Matrícula]" />
+                      externalMetadataColumnId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Matricula]"
+                      lineageId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Matrícula]" />
                     <inputColumn
-                      refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].Columns[Apellido Paterno]"
+                      refId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].Columns[Apellido Paterno]"
                       cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Apellido Paterno"
-                      externalMetadataColumnId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Apellido_Paterno]"
-                      lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Apellido Paterno]" />
+                      externalMetadataColumnId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Apellido_Paterno]"
+                      lineageId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Apellido Paterno]" />
                     <inputColumn
-                      refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].Columns[Apellido Materno]"
+                      refId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].Columns[Apellido Materno]"
                       cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Apellido Materno"
-                      externalMetadataColumnId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Apellido_Materno]"
-                      lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Apellido Materno]" />
+                      externalMetadataColumnId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Apellido_Materno]"
+                      lineageId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Apellido Materno]" />
                     <inputColumn
-                      refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].Columns[SQ ROL]"
+                      refId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].Columns[SQ ROL]"
                       cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="SQ ROL"
-                      externalMetadataColumnId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[SQ_ROL]"
-                      lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[SQ ROL]" />
+                      externalMetadataColumnId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[SQ_ROL]"
+                      lineageId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[SQ ROL]" />
                     <inputColumn
-                      refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].Columns[ROL INSOURCING]"
+                      refId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].Columns[ROL INSOURCING]"
                       cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="ROL INSOURCING"
-                      externalMetadataColumnId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[ROL_INSOURCING]"
-                      lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[ROL INSOURCING]" />
+                      externalMetadataColumnId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[ROL_INSOURCING]"
+                      lineageId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[ROL INSOURCING]" />
                     <inputColumn
-                      refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].Columns[TRIBU   COE]"
+                      refId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].Columns[TRIBU   COE]"
                       cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="100"
                       cachedName="TRIBU   COE"
-                      externalMetadataColumnId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[TRIBU_COE]"
-                      lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[TRIBU   COE]" />
+                      externalMetadataColumnId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[TRIBU_COE]"
+                      lineageId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[TRIBU   COE]" />
                     <inputColumn
-                      refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].Columns[Codigo de App Asignado]"
+                      refId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].Columns[Codigo de App Asignado]"
                       cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="Codigo de App Asignado"
-                      externalMetadataColumnId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Codigo_APP]"
-                      lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Codigo de App Asignado]" />
+                      externalMetadataColumnId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Codigo_APP]"
+                      lineageId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Codigo de App Asignado]" />
                     <inputColumn
-                      refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].Columns[% de Asignacion a la App]"
+                      refId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].Columns[% de Asignacion a la App]"
                       cachedCodepage="65001"
                       cachedDataType="str"
                       cachedLength="50"
                       cachedName="% de Asignacion a la App"
-                      externalMetadataColumnId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Por_Asignacion]"
-                      lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[% de Asignacion a la App]" />
+                      externalMetadataColumnId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Por_Asignacion]"
+                      lineageId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[% de Asignacion a la App]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Nombre_Cals]"
+                      refId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Nombre_Cals]"
                       dataType="wstr"
                       length="200"
                       name="Nombre_Cals" />
                     <externalMetadataColumn
-                      refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Mat_Chapter]"
+                      refId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Mat_Chapter]"
                       dataType="wstr"
                       length="50"
                       name="Mat_Chapter" />
                     <externalMetadataColumn
-                      refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Chapter_Leader]"
+                      refId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Chapter_Leader]"
                       dataType="wstr"
                       length="200"
                       name="Chapter_Leader" />
                     <externalMetadataColumn
-                      refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Tipo_Preper]"
+                      refId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Tipo_Preper]"
                       dataType="wstr"
                       length="50"
                       name="Tipo_Preper" />
                     <externalMetadataColumn
-                      refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Empresa]"
+                      refId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Empresa]"
                       dataType="wstr"
                       length="50"
                       name="Empresa" />
                     <externalMetadataColumn
-                      refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Matricula]"
+                      refId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Matricula]"
                       dataType="wstr"
                       length="50"
                       name="Matricula" />
                     <externalMetadataColumn
-                      refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Apellido_Paterno]"
+                      refId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Apellido_Paterno]"
                       dataType="wstr"
                       length="50"
                       name="Apellido_Paterno" />
                     <externalMetadataColumn
-                      refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Apellido_Materno]"
+                      refId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Apellido_Materno]"
                       dataType="wstr"
                       length="50"
                       name="Apellido_Materno" />
                     <externalMetadataColumn
-                      refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Nombres]"
+                      refId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Nombres]"
                       dataType="wstr"
                       length="100"
                       name="Nombres" />
                     <externalMetadataColumn
-                      refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[SQ_ROL]"
+                      refId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[SQ_ROL]"
                       dataType="wstr"
                       length="50"
                       name="SQ_ROL" />
                     <externalMetadataColumn
-                      refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[ROL_INSOURCING]"
+                      refId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[ROL_INSOURCING]"
                       dataType="wstr"
                       length="50"
                       name="ROL_INSOURCING" />
                     <externalMetadataColumn
-                      refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Especialidad]"
+                      refId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Especialidad]"
                       dataType="wstr"
                       length="50"
                       name="Especialidad" />
                     <externalMetadataColumn
-                      refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[TRIBU_COE]"
+                      refId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[TRIBU_COE]"
                       dataType="wstr"
                       length="100"
                       name="TRIBU_COE" />
                     <externalMetadataColumn
-                      refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[SQUAD]"
+                      refId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[SQUAD]"
                       dataType="wstr"
                       length="100"
                       name="SQUAD" />
                     <externalMetadataColumn
-                      refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Codigo_APP]"
+                      refId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Codigo_APP]"
                       dataType="wstr"
                       length="50"
                       name="Codigo_APP" />
                     <externalMetadataColumn
-                      refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Por_Asignacion]"
+                      refId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Por_Asignacion]"
                       dataType="wstr"
                       length="50"
                       name="Por_Asignacion" />
                     <externalMetadataColumn
-                      refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[BB]"
+                      refId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[BB]"
                       dataType="wstr"
                       length="100"
                       name="BB" />
                     <externalMetadataColumn
-                      refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[CHAPTER]"
+                      refId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[CHAPTER]"
                       dataType="wstr"
                       length="100"
                       name="CHAPTER" />
                     <externalMetadataColumn
-                      refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[COMENTARIOS]"
+                      refId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[COMENTARIOS]"
                       dataType="wstr"
                       length="1000"
                       name="COMENTARIOS" />
@@ -354,22 +354,22 @@
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Outputs[Salida de error de destino de ADO NET]"
+                  refId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Outputs[Salida de error de destino de ADO NET]"
                   exclusionGroup="1"
                   isErrorOut="true"
                   name="Salida de error de destino de ADO NET"
-                  synchronousInputId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET]">
+                  synchronousInputId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      refId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Carga a Temporales BD\Carga Base de Activos BD.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      lineageId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Carga a Temporales BD\Carga Base de Activos BD.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      refId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Carga a Temporales BD\Carga Base de Activos BD.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      lineageId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -378,7 +378,7 @@
               </outputs>
             </component>
             <component
-              refId="Package\Carga a Temporales BD\Leer Base de Activos"
+              refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos"
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Origen de archivo plano;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
               description="Origen de archivo plano"
@@ -398,25 +398,25 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Carga a Temporales BD\Leer Base de Activos.Connections[FlatFileConnection]"
+                  refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Connections[FlatFileConnection]"
                   connectionManagerID="{28ACCB7B-B73B-4A21-BD68-0D998F492108}:external"
                   connectionManagerRefId="Project.ConnectionManagers[Leer_Base_de_Activos]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
                 <output
-                  refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano]"
+                  refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano]"
                   name="Salida de origen de archivo plano">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Nombre Cals]"
+                      refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Nombre Cals]"
                       codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Nombre Cals]"
+                      externalMetadataColumnId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Nombre Cals]"
                       length="50"
-                      lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Nombre Cals]"
+                      lineageId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Nombre Cals]"
                       name="Nombre Cals"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -431,14 +431,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Mat Chapter]"
+                      refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Mat Chapter]"
                       codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Mat Chapter]"
+                      externalMetadataColumnId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Mat Chapter]"
                       length="50"
-                      lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Mat Chapter]"
+                      lineageId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Mat Chapter]"
                       name="Mat Chapter"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -453,14 +453,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Chapter Leader]"
+                      refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Chapter Leader]"
                       codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Chapter Leader]"
+                      externalMetadataColumnId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Chapter Leader]"
                       length="50"
-                      lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Chapter Leader]"
+                      lineageId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Chapter Leader]"
                       name="Chapter Leader"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -475,14 +475,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Tipo_Preper]"
+                      refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Tipo_Preper]"
                       codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Tipo_Preper]"
+                      externalMetadataColumnId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Tipo_Preper]"
                       length="50"
-                      lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Tipo_Preper]"
+                      lineageId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Tipo_Preper]"
                       name="Tipo_Preper"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -497,14 +497,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Empresa]"
+                      refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Empresa]"
                       codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Empresa]"
+                      externalMetadataColumnId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Empresa]"
                       length="50"
-                      lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Empresa]"
+                      lineageId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Empresa]"
                       name="Empresa"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -519,14 +519,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Matrícula]"
+                      refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Matrícula]"
                       codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Matrícula]"
+                      externalMetadataColumnId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Matrícula]"
                       length="50"
-                      lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Matrícula]"
+                      lineageId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Matrícula]"
                       name="Matrícula"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -541,14 +541,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Apellido Paterno]"
+                      refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Apellido Paterno]"
                       codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Apellido Paterno]"
+                      externalMetadataColumnId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Apellido Paterno]"
                       length="50"
-                      lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Apellido Paterno]"
+                      lineageId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Apellido Paterno]"
                       name="Apellido Paterno"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -563,14 +563,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Apellido Materno]"
+                      refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Apellido Materno]"
                       codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Apellido Materno]"
+                      externalMetadataColumnId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Apellido Materno]"
                       length="50"
-                      lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Apellido Materno]"
+                      lineageId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Apellido Materno]"
                       name="Apellido Materno"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -585,14 +585,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Nombres]"
+                      refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Nombres]"
                       codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Nombres]"
+                      externalMetadataColumnId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Nombres]"
                       length="50"
-                      lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Nombres]"
+                      lineageId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Nombres]"
                       name="Nombres"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -607,14 +607,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[SQ ROL]"
+                      refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[SQ ROL]"
                       codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[SQ ROL]"
+                      externalMetadataColumnId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[SQ ROL]"
                       length="50"
-                      lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[SQ ROL]"
+                      lineageId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[SQ ROL]"
                       name="SQ ROL"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -629,14 +629,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[ROL INSOURCING]"
+                      refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[ROL INSOURCING]"
                       codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[ROL INSOURCING]"
+                      externalMetadataColumnId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[ROL INSOURCING]"
                       length="50"
-                      lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[ROL INSOURCING]"
+                      lineageId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[ROL INSOURCING]"
                       name="ROL INSOURCING"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -651,14 +651,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Especialidad]"
+                      refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Especialidad]"
                       codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Especialidad]"
+                      externalMetadataColumnId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Especialidad]"
                       length="50"
-                      lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Especialidad]"
+                      lineageId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Especialidad]"
                       name="Especialidad"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -673,14 +673,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[TRIBU   COE]"
+                      refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[TRIBU   COE]"
                       codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[TRIBU   COE]"
+                      externalMetadataColumnId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[TRIBU   COE]"
                       length="100"
-                      lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[TRIBU   COE]"
+                      lineageId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[TRIBU   COE]"
                       name="TRIBU   COE"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -695,14 +695,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[SQUAD]"
+                      refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[SQUAD]"
                       codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[SQUAD]"
+                      externalMetadataColumnId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[SQUAD]"
                       length="50"
-                      lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[SQUAD]"
+                      lineageId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[SQUAD]"
                       name="SQUAD"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -717,14 +717,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Codigo de App Asignado]"
+                      refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Codigo de App Asignado]"
                       codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Codigo de App Asignado]"
+                      externalMetadataColumnId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Codigo de App Asignado]"
                       length="50"
-                      lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Codigo de App Asignado]"
+                      lineageId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Codigo de App Asignado]"
                       name="Codigo de App Asignado"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -739,14 +739,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[% de Asignacion a la App]"
+                      refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[% de Asignacion a la App]"
                       codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[% de Asignacion a la App]"
+                      externalMetadataColumnId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[% de Asignacion a la App]"
                       length="50"
-                      lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[% de Asignacion a la App]"
+                      lineageId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[% de Asignacion a la App]"
                       name="% de Asignacion a la App"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -761,14 +761,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[BB]"
+                      refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[BB]"
                       codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[BB]"
+                      externalMetadataColumnId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[BB]"
                       length="100"
-                      lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[BB]"
+                      lineageId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[BB]"
                       name="BB"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -783,14 +783,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[CHAPTER]"
+                      refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[CHAPTER]"
                       codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[CHAPTER]"
+                      externalMetadataColumnId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[CHAPTER]"
                       length="50"
-                      lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[CHAPTER]"
+                      lineageId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[CHAPTER]"
                       name="CHAPTER"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -805,14 +805,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[COMENTARIOS]"
+                      refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[COMENTARIOS]"
                       codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[COMENTARIOS]"
+                      externalMetadataColumnId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[COMENTARIOS]"
                       length="200"
-                      lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[COMENTARIOS]"
+                      lineageId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[COMENTARIOS]"
                       name="COMENTARIOS"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -827,14 +827,14 @@
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Columna 19]"
+                      refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Columna 19]"
                       codePage="65001"
                       dataType="str"
                       errorOrTruncationOperation="Conversión"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Columna 19]"
+                      externalMetadataColumnId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Columna 19]"
                       length="50"
-                      lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Columna 19]"
+                      lineageId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].Columns[Columna 19]"
                       name="Columna 19"
                       truncationRowDisposition="FailComponent">
                       <properties>
@@ -852,121 +852,121 @@
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Nombre Cals]"
+                      refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Nombre Cals]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="Nombre Cals" />
                     <externalMetadataColumn
-                      refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Mat Chapter]"
+                      refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Mat Chapter]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="Mat Chapter" />
                     <externalMetadataColumn
-                      refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Chapter Leader]"
+                      refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Chapter Leader]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="Chapter Leader" />
                     <externalMetadataColumn
-                      refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Tipo_Preper]"
+                      refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Tipo_Preper]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="Tipo_Preper" />
                     <externalMetadataColumn
-                      refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Empresa]"
+                      refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Empresa]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="Empresa" />
                     <externalMetadataColumn
-                      refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Matrícula]"
+                      refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Matrícula]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="Matrícula" />
                     <externalMetadataColumn
-                      refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Apellido Paterno]"
+                      refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Apellido Paterno]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="Apellido Paterno" />
                     <externalMetadataColumn
-                      refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Apellido Materno]"
+                      refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Apellido Materno]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="Apellido Materno" />
                     <externalMetadataColumn
-                      refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Nombres]"
+                      refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Nombres]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="Nombres" />
                     <externalMetadataColumn
-                      refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[SQ ROL]"
+                      refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[SQ ROL]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="SQ ROL" />
                     <externalMetadataColumn
-                      refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[ROL INSOURCING]"
+                      refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[ROL INSOURCING]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="ROL INSOURCING" />
                     <externalMetadataColumn
-                      refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Especialidad]"
+                      refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Especialidad]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="Especialidad" />
                     <externalMetadataColumn
-                      refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[TRIBU   COE]"
+                      refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[TRIBU   COE]"
                       codePage="65001"
                       dataType="str"
                       length="100"
                       name="TRIBU   COE" />
                     <externalMetadataColumn
-                      refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[SQUAD]"
+                      refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[SQUAD]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="SQUAD" />
                     <externalMetadataColumn
-                      refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Codigo de App Asignado]"
+                      refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Codigo de App Asignado]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="Codigo de App Asignado" />
                     <externalMetadataColumn
-                      refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[% de Asignacion a la App]"
+                      refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[% de Asignacion a la App]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="% de Asignacion a la App" />
                     <externalMetadataColumn
-                      refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[BB]"
+                      refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[BB]"
                       codePage="65001"
                       dataType="str"
                       length="100"
                       name="BB" />
                     <externalMetadataColumn
-                      refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[CHAPTER]"
+                      refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[CHAPTER]"
                       codePage="65001"
                       dataType="str"
                       length="50"
                       name="CHAPTER" />
                     <externalMetadataColumn
-                      refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[COMENTARIOS]"
+                      refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[COMENTARIOS]"
                       codePage="65001"
                       dataType="str"
                       length="200"
                       name="COMENTARIOS" />
                     <externalMetadataColumn
-                      refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Columna 19]"
+                      refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano].ExternalColumns[Columna 19]"
                       codePage="65001"
                       dataType="str"
                       length="50"
@@ -974,27 +974,27 @@
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de error de origen de archivo plano]"
+                  refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de error de origen de archivo plano]"
                   isErrorOut="true"
                   name="Salida de error de origen de archivo plano">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
                       codePage="65001"
                       dataType="text"
                       description="Columna de salida de error de origen de archivo plano"
-                      lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      lineageId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
                       name="Columna de salida de error de origen de archivo plano" />
                     <outputColumn
-                      refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      lineageId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      refId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      lineageId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -1005,10 +1005,10 @@
           </components>
           <paths>
             <path
-              refId="Package\Carga a Temporales BD.Paths[Salida de origen de archivo plano]"
-              endId="Package\Carga a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET]"
+              refId="Package\Carga de Archivo a Temporales BD.Paths[Salida de origen de archivo plano]"
+              endId="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD.Inputs[Entrada de destino de ADO NET]"
               name="Salida de origen de archivo plano"
-              startId="Package\Carga a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano]" />
+              startId="Package\Carga de Archivo a Temporales BD\Leer Base de Activos.Outputs[Salida de origen de archivo plano]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -1040,12 +1040,12 @@
       DTS:From="Package\Limpiar Temporales"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción"
-      DTS:To="Package\Carga a Temporales BD" />
+      DTS:To="Package\Carga de Archivo a Temporales BD" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Restricción 1]"
       DTS:CreationName=""
       DTS:DTSID="{F5BDFC43-C7BE-46BF-A063-68DA906D98D2}"
-      DTS:From="Package\Carga a Temporales BD"
+      DTS:From="Package\Carga de Archivo a Temporales BD"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Restricción 1"
       DTS:To="Package\Carga a Tablas Principales" />
@@ -1088,10 +1088,10 @@
         <NodeLayout
           Size="202,42"
           Id="Package\Carga a Tablas Principales"
-          TopLeft="709,120" />
+          TopLeft="759,121" />
         <NodeLayout
-          Size="190,42"
-          Id="Package\Carga a Temporales BD"
+          Size="243,42"
+          Id="Package\Carga de Archivo a Temporales BD"
           TopLeft="419,120" />
         <NodeLayout
           Size="172,42"
@@ -1121,18 +1121,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 1]"
-          TopLeft="609,141">
+          TopLeft="662,141.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="100,0"
+              EndConnector="97,0"
               Start="0,0"
-              End="92.5,0">
+              End="89.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="92.5,0" />
+                    End="89.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1145,20 +1145,20 @@
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\Carga a Temporales BD">
+    design-time-name="Package\Carga de Archivo a Temporales BD">
     <LayoutInfo>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="176,42"
-          Id="Package\Carga a Temporales BD\Leer Base de Activos"
+          Id="Package\Carga de Archivo a Temporales BD\Leer Base de Activos"
           TopLeft="345,75" />
         <NodeLayout
           Size="200,42"
-          Id="Package\Carga a Temporales BD\Carga Base de Activos BD"
+          Id="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD"
           TopLeft="334,324" />
         <EdgeLayout
-          Id="Package\Carga a Temporales BD.Paths[Salida de origen de archivo plano]"
+          Id="Package\Carga de Archivo a Temporales BD.Paths[Salida de origen de archivo plano]"
           TopLeft="433.5,117">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -1183,7 +1183,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Carga a Temporales BD\Carga Base de Activos BD">
+    design-time-name="Package\Carga de Archivo a Temporales BD\Carga Base de Activos BD">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
